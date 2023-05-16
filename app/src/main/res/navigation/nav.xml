@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/contactFragment">
+
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.sql_lesson.model.contact.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_contactFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_contactFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.sql_lesson.model.contact.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.example.sql_lesson.util.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+        <action
+            android:id="@+id/action_editFragment_to_edit2Fragment"
+            app:destination="@id/edit2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/edit2Fragment"
+        android:name="com.example.sql_lesson.util.Edit2Fragment"
+        android:label="fragment_edit2"
+        tools:layout="@layout/fragment_edit2" >
+        <action
+            android:id="@+id/action_edit2Fragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+</navigation>

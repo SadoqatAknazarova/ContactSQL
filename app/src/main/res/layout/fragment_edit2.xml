@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".util.Edit2Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/add_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/back_idedit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:text="Edit contact"
+            android:layout_marginStart="15dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/save_edit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_check_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_fragment"
+        android:orientation="vertical">
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="22sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_marginTop="6dp"
+            android:id="@+id/settext_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:hint="Enter name"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:background="@drawable/edittext"
+            tools:layout_editor_absoluteY="52dp" />
+        <TextView
+            android:layout_marginTop="36dp"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textSize="22sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_marginTop="6dp"
+            android:id="@+id/settext_phone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:padding="10dp"
+            android:inputType="textPersonName"
+            android:hint="+998 _ _   _ _ _   _ _   _ _"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:background="@drawable/edittext"
+            tools:layout_editor_absoluteY="52dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
